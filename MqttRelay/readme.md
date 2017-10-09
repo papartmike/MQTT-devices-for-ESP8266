@@ -3,7 +3,7 @@
 ![fritzing relay](wemos%20relay.png)
 
 
-## Home assitant integration
+## HOME ASSISTANT integration
 
 if headerTopic is changed ->  "{headertopic}/setPower"
 if headerTopic is changed ->  "{headertopic}/powerSet" 
