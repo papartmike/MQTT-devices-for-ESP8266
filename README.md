@@ -14,8 +14,8 @@ With ACTUATORS we consider all the devices that perform action FROM the microcon
  
  Every time a state of an actuator changes (via MQTT or via phisical control) the MCU notifies it communicating the very same payload he recieved (if it recieved that from an MQTT communication). If you want to use it in Home assistant you should use "optimistic: FALSE".
  the criteria is the following:
- - {/mydevice}/brightnessSet -> command topic
- - myplace/mydevice/setBrightness -> status topic (confirm, or akcnoledgment topic)
+ - {topic header}/brightnessSet -> command topic
+ - {topic header}/setBrightness -> status topic (confirm, or akcnoledgment topic)
 
 ## Authors
 
