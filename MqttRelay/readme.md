@@ -1,6 +1,6 @@
 # MQTT Relay:
 
-![fritzing relay](MqttRelay/wemos%20relay.png?raw=true)
+![fritzing relay](papartmike/MQTT-devices-for-ESP8266/MqttRelay/wemos%20relay.png)
 
 
 ## Home assitant integration
