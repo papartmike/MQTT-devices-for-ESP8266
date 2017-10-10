@@ -1,9 +1,27 @@
 # MQTT-devices-for-ESP8266
 
-A variety of sensors and actuators connected to the famous ESP8266 chip (tested with NODEMCU and WEMOS Mini) and communicating via MQTT. Initally developed for speaking with home automation framework like Home Assistant, Domoticz, OpenHab, but suitable for communicating with a generic MQTT platform.
+## Scope of Repository
+The scope of this repository is to provide a series of ready-made schetches for variety of sensors and actuators that can easily communicate via MQTT using ESP8266 chip family boards. Initally developed for connecting to a generic MQTT platform, the sensors works fine together with home automation framework like Home Assistant, Domoticz, NODE-RED and everything that can easily communicate with an MQTT broker.
 
-![](main_framework.png)
+[](main_framework.png)
 
+## Getting Started
+### Install ESP8266 CORE
+These sketches are developed inside the Arduino development enviroment (Arduino IDE) for the ESP8266 bords. Information about how to install the core for such boards are available here:
+
+  [esp8266 core](https://github.com/esp8266/Arduino)
+
+### Get an MQTT broker
+MQTT (aka MQ Telemetry Transport) is a machine-to-machine or “Internet of Things” connectivity protocol on top of TCP/IP. It allows extremely lightweight publish/subscribe messaging transport.
+In order to make your device communicating you need to connect to an MQTT broker. You can use an online broker like: [HiveMQ](http://www.hivemq.com/demos/websocket-client/)
+
+A better solution is to choose a broker and to intall it on a local machine (i.e. a Raspberry PI).
+the most widely used is [Eclipse - Mosquitto](https://mosquitto.org/)
+    
+### Get a Dashboard
+In order to easily manage your "things" you should have a platform able to perform automation and give you control and visibility of your devices.
+Our choice is [Home Assistant](https://home-assistant.io/) (HA) integrated together with [Node-Red](https://nodered.org/) (NR).
+If you choose to install HA operating system ([Hass.IO](https://home-assistant.io/hassio/)) it is very easy to install mosquitto and NR on the very same machine (preferred RPI) that will be your HUB for the "things".
 
 ### Actuators TOPIC and PAYLOAD naming criteria
 With ACTUATORS we consider all the devices that perform action FROM the microcontroller to the real world (OUTPUTs). Actuators (LEDs,  relays, buzzer, etc...) communicate with Home Assistant standard which means:
