@@ -10,6 +10,7 @@ if headerTopic is changed ->  "{headertopic}/powerSet"
 
 ### if you want a switch
 if you control a socket or a generic load
+[
 switch:
   platform: mqtt
   name: "my first controlled relay"
@@ -20,7 +21,7 @@ switch:
   optimistic: false
   qos: 1
   retain: true
-
+]
 ### if you want a light
 if this relay controls a light then:
 
