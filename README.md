@@ -2,6 +2,9 @@
 
 A variety of sensors and actuators connected to the famous ESP8266 chip (tested with NODEMCU and WEMOS Mini) and communicating via MQTT. Initally developed for speaking with home automation framework like Home Assistant, Domoticz, OpenHab, but suitable for communicating with a generic MQTT platform.
 
+![](main_framework.png)
+
+
 ### Actuators TOPIC and PAYLOAD naming criteria
 With ACTUATORS we consider all the devices that perform action FROM the microcontroller to the real world (OUTPUTs). Actuators (LEDs,  relays, buzzer, etc...) communicate with Home Assistant standard which means:
 
