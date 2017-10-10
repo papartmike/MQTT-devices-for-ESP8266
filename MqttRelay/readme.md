@@ -5,12 +5,18 @@
 
 ## HOME ASSISTANT integration
 
-if headerTopic is changed ->  "{headertopic}/setPower"
-if headerTopic is changed ->  "{headertopic}/powerSet" 
-
-### if you want a switch
-if you control a socket or a generic load
-[
+If headerTopic is changed
+```
+"{headertopic}/setPower"
+"{headertopic}/powerSet" 
+```
+i.e. headerTopic = "downstairs/livingroom/sofalight/" your power topics will be:
+```
+downstairs/livingroom/sofalight/setPower
+downstairs/livingroom/sofalight/powerSet
+```
+If the relay controls a socket or a generic load
+```
 switch:
   platform: mqtt
   name: "my first controlled relay"
@@ -21,10 +27,9 @@ switch:
   optimistic: false
   qos: 1
   retain: true
-]
-### if you want a light
-if this relay controls a light then:
-
+```
+If the relay controls a light then:
+```
 light:
   platform: mqtt
   name: "my first controlled relay"
@@ -35,7 +40,7 @@ light:
   optimistic: false
   qos: 1
   retain: true
-  
+  ```
   ## NODE RED integration
   The following nodes create a switch able to control the relay with NODE_RED dashboard
   
