@@ -1,6 +1,6 @@
 # MQTT Relay:
 
-![fritzing relay](wemos%20relay.png)
+![relay wiring](relayschema.png)
 
 
 ## HOME ASSISTANT integration
