@@ -1,9 +1,9 @@
 # MQTT-devices-for-ESP8266
-
+![](main_framework.png)
 ## Scope of Repository
 The scope of this repository is to provide a series of ready-made schetches for variety of sensors and actuators that can easily communicate via MQTT using ESP8266 chip family boards. Initally developed for connecting to a generic MQTT platform, the sensors works fine together with home automation framework like Home Assistant, Domoticz, NODE-RED and everything that can easily communicate with an MQTT broker.
 
-![](main_framework.png)
+
 
 ## Getting Started
 ### Install ESP8266 CORE
