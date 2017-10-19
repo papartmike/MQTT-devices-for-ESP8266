@@ -13,10 +13,10 @@ These sketches are developed inside the Arduino development enviroment (Arduino 
 
 ### Get an MQTT broker
 MQTT (aka MQ Telemetry Transport) is a machine-to-machine or “Internet of Things” connectivity protocol on top of TCP/IP. It allows extremely lightweight publish/subscribe messaging transport.
-In order to make your device communicating you need to connect to an MQTT broker. You can use an online broker like: [HiveMQ](http://www.hivemq.com/demos/websocket-client/)
+In order to make your device communicating you need to connect to an MQTT broker. For testing purposes you can use an online broker like: [HiveMQ](http://www.hivemq.com/demos/websocket-client/)
 
-A better solution is to choose a broker and to intall it on a local machine (i.e. a Raspberry PI).
-the most widely used is [Eclipse - Mosquitto](https://mosquitto.org/)
+A better solution is to choose a broker and to install it on a local machine (i.e. a Raspberry PI).
+The most widely used at the moment of writing is [Eclipse - Mosquitto](https://mosquitto.org/)
     
 ### Get a Dashboard
 In order to easily manage your "things" you should have a platform able to perform automation and give you control and visibility of your devices.
